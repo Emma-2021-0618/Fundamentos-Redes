@@ -7,3 +7,5 @@ antivirus
 vpn
 
 
+cable conarcial, todos tiene informacion de todos
+
