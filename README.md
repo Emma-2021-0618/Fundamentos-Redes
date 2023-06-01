@@ -23,3 +23,5 @@ capa 1
 
 cuando se sabe la red, solo faltaria la ip fisica 
 
+http 80 o cualquiera
+
