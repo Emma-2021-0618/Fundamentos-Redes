@@ -1,5 +1,5 @@
 ## Fundamentos-Redes
-fundamentos de red
+# capas
 -------------------------------------------
 Cosas que aprendi y aplica de estas materia
 4cJ%U^9tS7q7
