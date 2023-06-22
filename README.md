@@ -129,3 +129,16 @@ Recuerde que LLC y MAC tienen los siguientes roles en la capa de enlace de datos
 
 Subcapa LLC - Esta subcapa IEEE 802.2 se comunica entre el software de red en las capas superiores y el hardware del dispositivo en las capas inferiores. Coloca en la trama información que identifica qué protocolo de capa de red se utiliza para la trama. Esta información permite que múltiples protocolos de Capa 3, como IPv4 e IPv6, utilicen la misma interfaz de red y medios.
 Subcapa MAC - Esta subcapa (IEEE 802.3, 802.11 o 802.15, por ejemplo) se implementa en hardware y es responsable de la encapsulación de datos y control de acceso a medios. Proporciona direccionamiento de capa de enlace de datos y está integrado con varias tecnologías de capa física.
+
+calidad de servicio DS, DSCP , ECN
+
+traduccion de una red privada a una red publica se traduce la ip address
+
+route print mostra la tabla de dirreciones locales de equipo y virtuales
+netstat tabla de enrutamiento
+
+tabla mac arp -a
+
+gatewat predeterminado
+
+debe de tener la misma estructara que la red privada y tiene una interfaz que se comunica con la red publica
