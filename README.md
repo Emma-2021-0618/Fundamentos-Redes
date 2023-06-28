@@ -183,3 +183,9 @@ En cada entrada o fila de la tabla ARP, se enlaza una dirección IPv4 con una di
 Si el dispositivo localiza la dirección IPv4, se utiliza la dirección MAC correspondiente como la dirección MAC de destino de la trama. Si no se encuentra ninguna entrada, el dispositivo envía una solicitud de ARP.
 
 Haga clic en Reproducir en la figura para ver una animación de la función ARP.
+
+descubrimiento de venico
+
+tabla de interfaz ver tabla de enrutadiento
+
+
