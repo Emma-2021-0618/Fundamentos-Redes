@@ -142,3 +142,44 @@ tabla mac arp -a
 gatewat predeterminado
 
 debe de tener la misma estructara que la red privada y tiene una interfaz que se comunica con la red publica
+
+## Desconocer la dirrecion de MAC de una red
+Resolucion de direccion
+
+Destino de la misma red
+A veces, un host debe enviar un mensaje, pero solo conoce la dirección IP del dispositivo de destino. El host necesita saber la dirección MAC de ese dispositivo, pero ¿cómo se puede descubrir? Ahí es donde la resolución de direcciones se vuelve crítica.
+
+Hay dos direcciones primarias asignadas a un dispositivo en una LAN Ethernet:
+
+- Dirección física de capa 2 (la dirección MAC) – Se utiliza para comunicaciones NIC a NIC en la misma red Ethernet.
+
+- Dirección lógica de capa 3 (la dirección IP) – Se utiliza para enviar el paquete desde el dispositivo de origen al dispositivo de destino. La dirección IP de destino puede estar en la misma red IP que la de origen o en una red remota.
+
+Las direcciones físicas de capa 2 (es decir, las direcciones MAC de Ethernet) se utilizan para entregar la trama de enlace de datos con el paquete IP encapsulado de una NIC a otra NIC que está en la misma red. Si la dirección IP de destino está en la misma red, la dirección MAC de destino es la del dispositivo de destino.
+
+Considere el siguiente ejemplo utilizando representaciones de direcciones MAC simplificadas.
+
+se buscara en la red mediante el defaulf gateways y buscar esa dirrecion nic 
+
+destino en una red remota
+cuando la direccion ip destino esta en una red remota, la direccion mac de destino es la de la puerta de enlace predetermninada
+- ipv4 utiliza arp para acociar la direccion ipv4 de una dispositvo con la direccion mac de la nic del dispositivo
+- ipv6 utiliza ICMPV6 para asociar la direccion ipv6 de un dispositivo con la direccion MAC de la nic del dispositvo
+
+arp protocolo de resolicon dirrecion
+
+ára enviar una dispositivo buscar en su tabla arp 
+
+Cuando se envía un paquete a la capa de enlace de datos para encapsularlo en una trama de Ethernet, el dispositivo consulta una tabla en su memoria para encontrar la dirección MAC que está asignada a la dirección IPv4. Esta tabla se almacena temporalmente en la memoria RAM y se denomina tabla ARP o caché ARP.
+
+El dispositivo emisor busca en su tabla ARP la dirección IPv4 de destino y la dirección MAC correspondiente.
+
+Si la dirección IPv4 de destino del paquete está en la misma red que la dirección IPv4 de origen, el dispositivo busca la dirección IPv4 de destino en la tabla ARP.
+Si la dirección IPv4 de destino está en una red diferente que la dirección IPv4 de origen, el dispositivo busca la dirección IPv4 del gateway predeterminado.
+En ambos casos, se realiza una búsqueda de la dirección IPv4 y la dirección MAC correspondiente para el dispositivo.
+
+En cada entrada o fila de la tabla ARP, se enlaza una dirección IPv4 con una dirección MAC. Llamamos a la relación entre los dos valores un mapa. Esto solamente significa que es posible buscar una dirección IPv4 en la tabla y encontrar la dirección MAC correspondiente. La tabla ARP almacena temporalmente (en caché) la asignación para los dispositivos de la LAN.
+
+Si el dispositivo localiza la dirección IPv4, se utiliza la dirección MAC correspondiente como la dirección MAC de destino de la trama. Si no se encuentra ninguna entrada, el dispositivo envía una solicitud de ARP.
+
+Haga clic en Reproducir en la figura para ver una animación de la función ARP.
