@@ -184,8 +184,95 @@ Si el dispositivo localiza la dirección IPv4, se utiliza la dirección MAC corr
 
 Haga clic en Reproducir en la figura para ver una animación de la función ARP.
 
+modulo 11 direccionamiento ipv4
+
+porciones de red y host
+- una direccion ipv4 es una dirrecion jerarquica de 32 bits que se compone de una porion de red y una porcion de host
+- al determinar la posrcion de red frente a la porcion de host, debe mirar la secuenciia de 32 bits
+- se utiliza una mascara de subred ya que ip no permite la direccion duplica desde los primeros 3 conjuntos de 8 bits
+
+- para idetentiicar las porciones de red ya que la porcion de red ya que 255.255.255.0 es una parte de los primeros obtentos
+
+la longitud de prefijo
+- mascara uan longitud de prefijo es una metodo mas sencillo utilizando para udebtufucar una masara de subred
+- a mayor numero de red menor host pero mas pontencia y a menor red mayores host tengo
+- esta escrito en notacion de host por lo tanto, cuente el numero de bits en la mascara de subred y anadalo con una barra
+- los hostetos debe ser continuos
+
+  determinacion de la red and logica
+
+  uan operacion logica and boolean se utiliza para determinar la dirrecion mediante una tabla de verdad con modulacion y
+
 descubrimiento de venico
 
-tabla de interfaz ver tabla de enrutadiento
+dirreciones ed red,host y difusion
+- direcion de red
+- direcion de host
+- direccion de broadcast
+
+  rango util es toda la dirrecion ip que esta entre el identificar de la red y el broadcast
+si el ultimo obtento cuando terminar 0 no se puede usar como referencia de esa
+unicast
+- la transimision unicast esta enviado un paquete a una direciion ip
+
+broadcast
+
+- es cuando se manda a todos los dispositivos de la red
+- se envia por todos los puertos menos por donde envio
+
+multicast
+
+- la transmision de multicast esta envida a algunos equipos en especifico
+224.255.255.255 se utilizo
+  
+
+  tipos de direcciones ipv4
+
+  las direcciones privada tiene fecha sde expiracion
+
+  rango de red privada
+10.0.0.0/8
+172.16 al 172.31 es privadi
+tambien 192.168 a 192.168
+
+nuestra dirrecion privada se traduce con una dirrecion publica 
+
+direccion de loopback es cuando el equipo esta capacitado para comunicarse con ella misma.
+
+dirrecion de enlace local se le conoce con direcion de apipa i direccuibes autoasignadas
+
+direccionamiento con clase legcy
+
+rfc 790 asigna direcciones ipv4
+
+en clase A 0.0.0.0/8 a 127.0.0.0/8
+en clase B 128.0.0.0/16 a 191.255.0.0/16 camaras ip toman las clases b
+en Clase C 192.0.0.0/24 a 223.255.255.0/24
+en Clase D 224.0.0.0 a 239.0.0.0
+en Clase E 240.0.0.0 255.0.0.0
+
+problemas con lso dominios de broadcast grandes
+
+- segmentando al red
+- al segmentar la red se puede hacer una porcion de sub red
+
+motivos para dividir en subredes
+
+- la division en subredes disminuye ek trafico de red general y mejora su rendimiento
+- se puede utilizar para implementar de seguridad entre subredes ka subredees reduce el numero de dispostis afectadir oir ek trafico de broadcast anormal
+
+subnetear una red ipv4
+
+son mas faciles dividir redes en /8 /16 /24 y tiene host 16777214 65534 254
+
+subred privada frente al espacio de direcciones ipv4 publico
+las redes empresariales tendra un intranet la red interna de una empresa nomrlmente utiliza direcciones ipv4 privadas 
+dmz contiene recursos disponible para internet, los dispositivos de la dmz utilizan direcciones ipv4 
+
+uan empresa podria utilizar 10.0.0.0/8 y la sybred en el limite de red /16 o /24
+
+los dispositivos de dmz tendrian que configurarse con direcciones ip publicas.
+
+VLSM
 
 
